@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 4 Custom Theme</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link href="css/bootstrap-custom-base.min.css?9aefccd182c30f04bbea" rel="stylesheet"><link href="css/bootstrap-custom.min.css?9aefccd182c30f04bbea" rel="stylesheet">
+</head>
+<body>
+
+<!-- If not using links in the navbar, add .site-header--no-navbar-links to header. -->
+<header class="site-header">
+    <!-- HEADER MAIN SECTION -->
+    <div class="site-header__main">
+        <img src="images/logo.jpg" alt="Logo"/>
+
+        <div class="profile">
+            <!-- if (!isAuthenticated) { -->
+            <!--     <a class="btn btn-secondary" href="#">Log In</a> -->
+            <!-- } else { -->
+            <!-- DROPDOWN BUTTON -->
+            <div class="dropdown">
+                <button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">
+                    John Doe
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">
+                        My Profile
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        Log Out
+                    </a>
+                </div>
+            </div>
+            <!-- / DROPDOWN BUTTON -->
+            <!-- } -->
+        </div>
+    </div>
+    <!-- / HEADER MAIN SECTION -->
+
+    <!-- NAVBAR SECTION -->
+    <div class="site-header__navbar">
+        <nav class="navbar navbar-expand-lg">
+            <!-- LINKS - REMOVE IF NOT NEEDED -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-header-links">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="site-header-links">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- / LINKS - REMOVE IF NOT NEEDED -->
+        </nav>
+    </div>
+    <!-- / NAVBAR SECTION -->
+</header>
+
+
+<div class="hero-solid">
+    <div class="site-layout">
+        <div class="site-main">
+            <h1 class="hero-solid__title">Bootstrap 4 Custom Theme</h1>
+            <p class="hero-solid__subline">View the HTML source of this page to see how it works!</p>
+        </div>
+    </div>
+</div>
+
+<div class="site-layout">
+    <main class="site-main">
+        <p class="text-right">Version 1.0.0</p>
+        <hr>
+
+        <div class="spacer-sm">
+            <h2>CSS Files</h2>
+
+            <ul>
+                <li><a href="css/bootstrap-custom-base.css">bootstrap-custom-base.css</a></li>
+                <li><a href="css/bootstrap-custom-base.min.css">bootstrap-custom-base.min.css</a></li>
+                <li><a href="css/bootstrap-custom.css">bootstrap-custom.css</a></li>
+                <li><a href="css/bootstrap-custom.min.css">bootstrap-custom.min.css</a></li>
+            </ul>
+        </div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h1>h1. Bootstrap heading</h1>
+    <h2>h2. Bootstrap heading</h2>
+    <h3>h3. Bootstrap heading</h3>
+    <h4>h4. Bootstrap heading</h4>
+    <h5>h5. Bootstrap heading</h5>
+    <h6>h6. Bootstrap heading</h6>
+
+    <code>&lt;div class="h3"&gt;h3. div&lt;/div&gt;</code>
+    <div class="h3">h3. div</div>
+
+    <p class="text-success">text-success</p>
+    <p class="text-danger">text-danger</p>
+    <p class="text-warning">text-warning</p>
+    <p class="text-info">text-info</p>
+    <p class="text-muted">text-muted</p>
+
+    <ul class="list-unstyled">
+        <li>
+            <a href="#">Hyperlink</a>
+        </li>
+        <li>
+            <a href="tel:5555555555">555-555-5555</a>
+        </li>
+    </ul>
+</div>
+
+<hr>
+
+<div class="spacer-sm">
+    <h2>Typography - Paragraphs</h2>
+
+    <p class="lead">
+        Lead paragraph... Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis,
+        est non commodo luctus.
+    </p>
+    
+    <p>
+        <strong>Lorem ipsum dolor</strong> sit amet, consectetuer adipiscing elit. <em>Aenean commodo ligula</em> eget 
+        dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+    </p>
+    <p>
+        Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim 
+        justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer 
+        tincidunt. Cras dapibus. <a href="#">Vivamus elementum</a> semper nisi. Aenean vulputate eleifend tellus. 
+        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra 
+        quis, feugiat a.
+    </p>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Typography - Lists</h2>
+
+    <h3>Unordered</h3>
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Nulla volutpat aliquam velit
+            <ul>
+                <li>Phasellus iaculis neque</li>
+                <li>Purus sodales ultricies</li>
+            </ul>
+        </li>
+        <li>Faucibus porta lacus fringilla vel</li>
+    </ul>
+
+    <h3>Ordered</h3>
+
+    <ol>
+        <li>Lorem ipsum dolor sit amet</li>
+        <li>Nulla volutpat aliquam velit
+            <ul>
+                <li>Phasellus iaculis neque</li>
+                <li>Purus sodales ultricies</li>
+            </ul>
+        </li>
+        <li>Faucibus porta lacus fringilla vel</li>
+    </ol>
+    
+    <h3>Condensed</h3>
+    
+    <ul class="list-condensed">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+    
+    <h3>Unstyled</h3>
+
+    <ul class="list-unstyled">
+        <li>Unstyled item 1</li>
+        <li>Unstyled item 2</li>
+        <li>Unstyled item 3</li>
+    </ul>
+
+    <h3>Inline</h3>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">Item 1</li>
+        <li class="list-inline-item">Item 2</li>
+        <li class="list-inline-item">Item 3</li>
+    </ul>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Accordion</h2>
+
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-lg btn-link text-left w-100" data-toggle="collapse" data-target="#collapseOne">
+                        Collapsible Group Item #1
+                    </button>
+                </h5>
+            </div>
+            <div class="collapse show" id="collapseOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus.
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                    quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+                    ut, imperdiet a,
+                    venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-lg btn-link collapsed text-left w-100" data-toggle="collapse" data-target="#collapseTwo">
+                        Collapsible Group Item #2
+                    </button>
+                </h5>
+            </div>
+            <div class="collapse" id="collapseTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                    tellus.
+                    Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+                    dapibus in,
+                    viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque
+                    rutrum.
+                    Aenean imperdiet.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-lg btn-link collapsed text-left w-100" data-toggle="collapse" data-target="#collapseThree">
+                        Collapsible Group Item #3
+                    </button>
+                </h5>
+            </div>
+            <div class="collapse" id="collapseThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus.
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                    quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus
+                    ut, imperdiet a,
+                    venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Breadcrumb</h2>
+
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active">Data</li>
+        </ol>
+    </nav>
+</div>
+
+        <hr>
+        
+<h2>Buttons</h2>
+ 
+<div class="spacer-sm">   
+    <h3>Standard</h3>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <button class="btn btn-primary">Primary</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-primary btn-sm">Primary Sm</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-primary btn-lg">Primary Lg</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-primary" disabled>Disabled</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-primary btn-sm" disabled>Disabled</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-primary btn-lg" disabled>Disabled</button>
+        </li>
+    </ul>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <button class="btn btn-secondary">Secondary</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-secondary btn-sm">Secondary</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-secondary btn-lg">Secondary</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-secondary" disabled>Disabled</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-secondary btn-sm" disabled>Disabled</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-secondary btn-lg" disabled>Disabled</button>
+        </li>
+    </ul>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <button class="btn btn-success">Success</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-success btn-sm">Success</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-success btn-lg">Success</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-success" disabled>Success</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-success btn-sm" disabled>Success</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-success btn-lg" disabled>Success</button>
+        </li>
+    </ul>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <button class="btn btn-warning">Warning</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-warning btn-sm">Warning</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-warning btn-lg">Warning</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-warning" disabled>Disabled</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-warning btn-sm" disabled>Disabled</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-warning btn-lg" disabled>Disabled</button>
+        </li>
+    </ul>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <button class="btn btn-danger">Danger</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-danger btn-sm">Danger</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-danger btn-lg">Danger</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-danger" disabled>Disabled</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-danger btn-sm" disabled>Disabled</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-danger btn-lg" disabled>Disabled</button>
+        </li>
+    </ul>
+</div>
+    
+<div class="spacer-sm">
+    <h3>Buttons Styled as Links</h3>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <button class="btn btn-link">Btn Link</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-link btn-sm">Btn Link Sm</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-link btn-lg">Btn Link Lg</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-link" disabled>Btn Link Disabled</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-link btn-sm" disabled>Btn Link Disabled</button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-link btn-lg" disabled>Btn Link Disabled</button>
+        </li>
+    </ul>
+</div>
+    
+<div class="spacer-sm">
+    <h3>Links Styled as Buttons</h3>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <a class="btn btn-primary" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-primary btn-sm" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-primary btn-lg" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-primary disabled" aria-disabled="true">Link button</a>
+        </li>
+    </ul>
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <a class="btn btn-secondary" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-secondary btn-sm" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-secondary btn-lg" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-secondary disabled" aria-disabled="true">Link button</a>
+        </li>
+    </ul>
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <a class="btn btn-success" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-success btn-sm" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-success btn-lg" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-success disabled" aria-disabled="true">Link button</a>
+        </li>
+    </ul>
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <a class="btn btn-warning" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-warning btn-sm" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-warning btn-lg" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-warning disabled" aria-disabled="true">Link button</a>
+        </li>
+    </ul>
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <a class="btn btn-danger" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-danger btn-sm" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-danger btn-lg" href="#">Link button</a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn btn-danger disabled" aria-disabled="true">Link button</a>
+        </li>
+    </ul>
+</div>
+
+        
+<h3>Outline</h3>
+
+<ul class="list-inline">
+    <li class="list-inline-item">
+        <button class="btn btn-outline-primary">Primary</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-primary btn-sm">Primary Sm</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-primary btn-lg">Primary Lg</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-primary" disabled>Disabled</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-primary btn-sm" disabled>Disabled</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-primary btn-lg" disabled>Disabled</button>
+    </li>
+</ul>
+
+<ul class="list-inline">
+    <li class="list-inline-item">
+        <button class="btn btn-outline-secondary">Secondary</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-secondary btn-sm">Secondary</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-secondary btn-lg">Secondary</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-secondary" disabled>Disabled</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-secondary btn-sm" disabled>Disabled</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-secondary btn-lg" disabled>Disabled</button>
+    </li>
+</ul>
+
+<ul class="list-inline">
+    <li class="list-inline-item">
+        <button class="btn btn-outline-success">Success</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-success btn-sm">Success</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-success btn-lg">Success</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-success" disabled>Success</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-success btn-sm" disabled>Success</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-success btn-lg" disabled>Success</button>
+    </li>
+</ul>
+
+<ul class="list-inline">
+    <li class="list-inline-item">
+        <button class="btn btn-outline-warning">Warning</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-warning btn-sm">Warning</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-warning btn-lg">Warning</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-warning" disabled>Disabled</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-warning btn-sm" disabled>Disabled</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-warning btn-lg" disabled>Disabled</button>
+    </li>
+</ul>
+
+<ul class="list-inline">
+    <li class="list-inline-item">
+        <button class="btn btn-outline-danger">Danger</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-danger btn-sm">Danger</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-danger btn-lg">Danger</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-danger" disabled>Disabled</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-danger btn-sm" disabled>Disabled</button>
+    </li>
+    <li class="list-inline-item">
+        <button class="btn btn-outline-danger btn-lg" disabled>Disabled</button>
+    </li>
+</ul>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Dropdowns</h2>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Dropdown link 1</a>
+                    <a class="dropdown-item" href="#">Dropdown link 2</a>
+                </div>
+            </div>
+        </li>
+        <li class="list-inline-item">
+            <div class="dropdown">
+                <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Dropdown link 1</a>
+                    <a class="dropdown-item" href="#">Dropdown link 2</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Cards</h2>
+
+    <div class="card spacer-sm">
+        <div class="card-body">
+            This is some text within a card body.
+        </div>
+    </div>
+
+    <div class="card spacer-sm">
+        <h5 class="card-header">Featured</h5>
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn btn-primary" href="#">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card site-card">
+        <div class="card-header">Header .site-card</div>
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+        </div>
+    </div>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Collapse</h2>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">
+            <a data-toggle="collapse" href="#collapseExample" role="button">
+                Link with href
+            </a>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-primary ml-3" type="button" data-toggle="collapse" data-target="#collapseExample">
+                Button with data-target
+            </button>
+        </li>
+    </ul>
+    <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+    </div>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Form - Basic</h2>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input class="form-control" type="email" id="exampleInputEmail1" placeholder="Enter email">
+            <small class="form-text text-muted" id="emailHelp">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input class="form-control" type="password" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect">Example select</label>
+            <select class="form-control" id="exampleFormControlSelect">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="comments">Example textarea</label>
+            <textarea class="form-control" rows="3" id="comments"></textarea>
+        </div>
+
+        <div class="form-group form-check">
+            <input class="form-check-input" type="checkbox" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Form - Horizontal</h2>
+
+    <form>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="inputEmail3">Email</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="email" id="inputEmail3" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="inputPassword3">Password</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="password" id="inputPassword3" placeholder="Password">
+            </div>
+        </div>
+        <fieldset class="form-group">
+            <div class="row">
+                <div class="col-form-label col-sm-2 pt-0">Radios</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                               value="option1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            First radio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                               value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            Second radio
+                        </label>
+                    </div>
+                    <div class="form-check disabled">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                               value="option3" disabled>
+                        <label class="form-check-label" for="gridRadios3">
+                            Third disabled radio
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                           value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                           value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2">Checkbox</div>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                        Example checkbox
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button class="btn btn-primary" type="submit">Sign in</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Tabs</h2>
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+        </li>
+    </ul>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Modals</h2>
+
+    <p>Press button to open modal.</p>
+
+    <!-- Button trigger modal -->
+    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">
+        Open modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" type="button">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Pagination</h2>
+
+    <nav>
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+    </nav>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Spacing</h2>
+
+    <ul>
+        <li>.spacer-xs</li>
+        <li>.spacer-sm</li>
+        <li>.spacer-md</li>
+        <li>.spacer-lg</li>
+        <li>.spacer-xl</li>
+    </ul>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Grid System</h2>
+
+    <p>View documentation on the Bootstrap website.</p>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Icons</h2>
+
+    <p>
+        "Free, high quality, open source icon library with over 1,600 icons. Include them anyway you like—SVGs, 
+        SVG sprite, or web fonts. Use them with or without Bootstrap in any project."
+    </p>
+    <p>
+        <a href="https://icons.getbootstrap.com">https://icons.getbootstrap.com</a>
+    </p>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Media Query Breakpoints</h2>
+
+    <p>When writing your own style sheet, use these breakpoints as a reference. The main "mobile" breakpoint used in
+        this theme is <strong>767.98px</strong></p>
+
+    <pre>
+    /* Extra small devices (portrait phones, less than 576px) */
+    @media (max-width: 575.98px) { ... }
+
+    /* Small devices (landscape phones, less than 768px) */
+    @media (max-width: 767.98px) { ... }
+
+    /* Medium devices (tablets, less than 992px) */
+    @media (max-width: 991.98px) { ... }
+
+    /* Large devices (desktops, less than 1200px) */
+    @media (max-width: 1199.98px) { ... }
+
+    /* Extra large devices (large desktops) */
+    @media (max-width: 1399.98px) { ... }
+            </pre>
+
+    <p style="font-style: italic;">
+        Why subtract .02px? Browsers don’t currently support range context queries, so we work around the
+        limitations of min- and max- prefixes and viewports with fractional widths (which can occur under certain
+        conditions on high-dpi devices, for instance) by using values with higher precision.<br/>
+        - <a href="https://getbootstrap.com/docs/5.1/layout/breakpoints/#media-queries" class="text-break">
+              https://getbootstrap.com/docs/5.1/layout/breakpoints/#media-queries
+          </a>
+    </p>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>Customizing Theme</h2>
+
+    <h3>Example of Overriding Styles</h3>
+
+    <p>Start by creating a custom style sheet. To reduce the size of the h1 element, you can do the
+        following.</p>
+
+    <pre>
+    h1, .h1 {
+        font-size: 3.25rem;
+    }
+
+    @media (max-width: 767.98px) {
+        h1, .h1 {
+            font-size: 1.75rem;
+        }
+    }
+            </pre>
+
+    <hr>
+
+    <h3>Changing Base Font Size</h3>
+
+    <p>The default font size of this theme is 16px. Adjust the font size by specifying the new size in pixels
+        or a relative value.</p>
+
+    <pre>
+    html {
+        font-size: 14px;
+        // or
+        font-size: 0.875rem;
+    }
+            </pre>
+
+    <hr>
+
+    <h3>Changing Layout Max Width</h3>
+
+    <p>The max width of this theme is 1440px. The width can be changed as follows.</p>
+
+    <pre>
+    .site-layout {
+        max-width: 1080px;
+    }
+    </pre>
+</div>
+
+        <hr>
+        
+<div class="spacer-sm">
+    <h2>CSS Variables</h2>
+
+    <style>
+        .brand-digital-red {
+            color: var(--brand-digital-red);
+        }
+
+        .brand-sans-serif {
+            font-family: var(--font-family-sans-serif);
+        }
+    </style>
+
+    <pre>
+&lt;style&gt; .brand-digital-red { color: var(--brand-digital-red); } &lt;/style&gt;
+
+&lt;h5 class="brand-digital-red"&gt;This is a --brand-digital-red CSS variable.&lt;/h5&gt;
+    </pre>
+
+    <h5 class="brand-digital-red">This is a --brand-digital-red CSS variable.</h5>
+
+    <pre>
+&lt;style&gt; .brand-sans-serif { font-family: var(--font-family-sans-serif); } &lt;/style&gt;
+
+&lt;h5 class="brand-sans-serif"&gt;This is a --font-family-sans-serif CSS variable.&lt;/h5&gt;
+    </pre>
+
+    <h5 class="brand-sans-serif">This is a --font-family-sans-serif CSS variable.</h5>
+
+    <em>
+        Reference:
+        <a href="https://getbootstrap.com/docs/5.0/customize/css-variables" class="text-break">
+            https://getbootstrap.com/docs/5.0/customize/css-variables
+        </a>
+    </em>
+
+    <h4 class="mt-4">Theme variables:</h4>
+
+    <pre>
+--brand-dark-blue:     #0f2144;
+--brand-navy-blue:     #1a3875;
+--brand-dark-steel:    #5b7785;
+--brand-steel-blue:    #8aa3b0;
+--brand-light-blue:    #c4d1d7;
+--brand-pale-blue:     #d6dfe4;
+--brand-plum:          #492436;
+--brand-light-plum:    #765C69;
+--brand-pale-plum:     #ecc8c8;
+--brand-pale-gold:     #fef6e4;
+--brand-dark-red:      #b62b26;
+--brand-highlight-red: #f5290a;
+--brand-digital-red:   #e91f00;
+--brand-black:         #000000;
+--brand-white:         #ffffff;
+--brand-carbon:        #303030;
+--brand-steel:         #555555;
+--brand-silver:        #b1b1b1;
+--brand-veil:          #9c9c9c;
+--brand-cloud:         #e3e3e3;
+--brand-fog:           #f3f6f7;
+--primary:           #0f2144;
+--secondary:         #e3e3e3;
+--success:           #00892f;
+--info:              #555555;
+--warning:           #ffa800;
+--danger:            #e91f00;
+--light:             #e3e3e3;
+--dark:              #555555;
+--font-family-sans-serif: "Open Sans", sans-serif;
+--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+</pre>
+</div>
+
+        <hr>
+        <p><em>Note: The end year in the copyright statement should be dynamic and set to the current year.</em></p>
+        <p class="text-right">Version 1.0.0</p>
+    </main>
+</div>
+
+
+<footer class="site-footer">
+    <div class="site-footer__main">
+        <div class="row">
+            <div class="col-md-3 site-footer--small">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+                <div>
+                    <a class="btn btn-primary" href="#">Search</a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <h3>Section 1</h3>
+
+                <ul>
+                    <li><a href="#">Section 1 Link 1</a></li>
+                    <li><a href="#">Section 1 Link 2</a></li>
+                    <li><a href="#">Section 1 Link 3</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h3>Section 2</h3>
+
+                <ul>
+                    <li><a href="#">Section 2 Link 1</a></li>
+                    <li><a href="#">Section 2 Link 2</a></li>
+                    <li><a href="#">Section 2 Link 3</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h3>Section 3</h3>
+
+                <ul>
+                    <li><a href="#">Section 3 Link 1</a></li>
+                    <li><a href="#">Section 3 Link 2</a></li>
+                    <li><a href="#">Section 3 Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-footer__main site-footer--mobile">
+        <h3><a href="#">Section 1</a></h3>
+        <h3><a href="#">Section 2</a></h3>
+        <h3><a href="#">Section 3</a></h3>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+
+    <div class="site-footer__legal">
+        <div class="row">
+            <div class="col-lg-6">
+                <ul>
+                    <li>
+                        <a href="#">Privacy Statement</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms &amp; Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 site-footer__copyright">
+                <p class="site-footer__copyright-text">Copyright © 1996-2022 Company Name</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"
+        integrity="sha512-ubuT8Z88WxezgSqf3RLuNi5lmjstiJcyezx34yIU2gAHonIi27Na7atqzUZCOoY4CExaoFumzOsFQ2Ch+I/HCw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"
+        integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+
+
+</body>
+</html>

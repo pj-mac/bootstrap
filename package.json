@@ -1,0 +1,6 @@
+{
+  "version": "1.0.0",
+  "scripts": {
+    "build:all": "cd bootstrap3 && npm run build && cd ../ && cd bootstrap4 && npm run build && cd ../ && cd bootstrap5 && npm run build"
+  }
+}

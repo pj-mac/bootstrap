@@ -1,0 +1,281 @@
+.site-header {
+    &__main {
+        &:extend(.site-layout);
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            height: 80px;
+        }
+
+        .profile {
+            padding-right: 1rem;
+
+            .btn {
+                color: @brand-dark-blue;
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            .dropdown-menu {
+                // Fixes dropdown from getting cut off on right side.
+                float: right;
+                left: auto;
+                right: 0;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &__navbar {
+        border-top: .0625rem solid @brand-steel-blue;
+
+        .navbar {
+            &:extend(.site-layout);
+            background-color: @brand-white;
+            border: none;
+            min-height: 2.1875rem;
+            padding: 0;
+            width: 100%;
+        }
+
+        .navbar-collapse {
+            border: none;
+            justify-content: center;
+        }
+
+        .navbar-toggle {
+            border: none;
+            border-radius: inherit;
+            color: transparent;
+            float: left;
+            margin-top: 0;
+            margin-bottom: 0;
+            outline: none;
+
+            .icon-bar {
+                background-color: white;
+            }
+
+            &:focus, &:hover, &:active {
+                background-color: @brand-dark-blue;
+
+                .icon-bar {
+                    background-color: white;
+                }
+            }
+        }
+
+        .navbar-nav {
+            text-align: center;
+            width: 100%;
+
+            // Center links
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            li {
+                font-weight: bold;
+                flex: 1 1 auto;
+                margin: 0;
+                padding: 0;
+            }
+
+            a {
+                color: @brand-dark-blue;
+                display: inline-block;
+                font-weight: bold;
+                line-height: 1rem;
+                padding: 0;
+                text-decoration: none;
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    height: 0.0625rem;
+                    width: 100%;
+                }
+
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    height: 0.25rem;
+                    width: 100%;
+                }
+
+                &:hover {
+                    color: @brand-digital-red;
+                }
+
+                &:hover, &:focus {
+                    background: none;
+                }
+
+                &.active  {
+                    font-weight: 700;
+
+                    &:after {
+                        background: @brand-digital-red;
+                        content: '';
+                        display: inline-block;
+                        height: 0.25rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .collapsed {
+            background-color: inherit;
+
+            .icon-bar {
+                background-color: @brand-white;
+            }
+        }
+
+        .navbar-nav {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .justify-content-center ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%
+    }
+}
+
+
+/*
+ * Mobile styles
+ */
+
+@media (max-width: @screen-md) {
+    .site-header {
+        margin-bottom: 0.625rem;
+
+        &__main {
+            margin-top: 2.8125rem !important;
+
+            img {
+                height: 55px;
+            }
+
+            .profile {
+                display: block;
+                position: absolute;
+                top: 0.3125rem;
+                right: 3.125rem;
+                z-index: 1001;
+
+                .btn {
+                    background-color: inherit;
+                    box-shadow: none;
+                    color: @brand-white;
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                    margin: 0 1.25rem 0 0;
+                    padding: 0;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+
+        &__navbar {
+            .navbar {
+                background-color: @brand-dark-blue;
+                justify-content: flex-end;
+                padding-left: 0;
+                position: absolute;
+                top: 0;
+                // Prevents issue in BS 3 and 4 where expanded menu appears behind content if a grid is at top of page.
+                z-index: 1;
+            }
+
+            .navbar-header {
+                margin-top: 0.3125rem;
+            }
+
+            .navbar-toggle {
+                float: right;
+                margin-right: 0.625rem;
+            }
+
+            .navbar-nav {
+                background-color: @brand-dark-blue;
+                height: 100vh;
+                margin-bottom: 0.125rem;
+                text-align: left;
+
+                // Un-center links
+                display: block;
+
+                li {
+                    border-bottom: 1px solid @brand-navy-blue;
+                    padding-left: 0;
+                }
+
+                li:first-child {
+                    border-top: 1px solid @brand-navy-blue;
+                }
+
+                a {
+                    color: @brand-white;
+                    display: block;
+                    padding-left: 0.5rem;
+
+                    &:link, &:visited, &:focus, &:hover, &:active {
+                        color: @brand-white;
+                    }
+
+                    &:after {
+                        height: 0.125rem;
+                    }
+
+                    &:hover, &.active  {
+                        &:after {
+                            height: 0.125rem;
+                        }
+                    }
+                }
+            }
+
+            .navbar-collapse {
+                padding-right: 0;
+            }
+        }
+
+        .justify-content-center ul {
+            display: block;
+        }
+
+        // Used when there is no hamburger menu (no links in navbar) and mobile profile dropdown should be flush right.
+        &--no-navbar-links {
+            .profile {
+                padding-right: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+
+/*
+ * Print styles
+ */
+
+@media print {
+    .site-header {
+        display: none;
+    }
+}

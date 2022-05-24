@@ -1,0 +1,11 @@
+@import "./../src/scss/theme";
+
+
+/*
+ * Imports Default Bootstrap Stylesheet
+ * Note: This must appear *after* setting the variables.
+ * Alternatively, you can import specific Bootstrap components to optimize the file size of the generated style sheet.
+ * See the Bootstrap documentation on their website for details.
+ */
+
+@import "bootstrap/scss/bootstrap";

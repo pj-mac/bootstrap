@@ -1,0 +1,26 @@
+.accordion {
+    .panel-title {
+        font-size: 1rem;
+    }
+
+    [data-toggle=collapse] {
+        color: @headings-color;
+        display: block;
+        font-family: @font-family-sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:before {
+            content: "\e114"; /* Collapse icon */
+            float: left;
+            font-family: "Glyphicons Halflings";
+            font-size: 11px;
+            padding-right: 1rem;
+        }
+
+        &.collapsed:before {
+            content: "\e080"; /* Expand icon */
+            font-family: "Glyphicons Halflings";
+        }
+    }
+}

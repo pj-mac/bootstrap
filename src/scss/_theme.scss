@@ -1,0 +1,112 @@
+/*
+ * Brand Colors
+ */
+
+// Primary Colors
+$brand-dark-blue: #042c62;
+$brand-navy-blue: #1a3875;
+$brand-dark-steel: #5b7785;
+$brand-steel-blue: #8aa3b0;
+$brand-light-blue: #c4d1d7;
+$brand-pale-blue: #d6dfe4;
+
+// Secondary Colors
+$brand-plum: #492436;
+$brand-light-plum: #765C69;
+$brand-pale-plum: #ecc8c8;
+$brand-pale-gold: #fef6e4;
+$brand-dark-red: #b62b26;
+$brand-highlight-red: #f5290a;
+$brand-digital-red: #e91f00;
+
+// Black and White Colors
+$brand-black: #000000;
+$brand-white: #ffffff;
+
+// Gray Colors
+$brand-carbon: #303030;
+$brand-steel: #555555;
+$brand-silver: #b1b1b1;
+$brand-veil: #9c9c9c;
+$brand-cloud: #e3e3e3;
+$brand-fog: #f3f6f7;
+
+// Functional Colors
+$brand-alert: $brand-digital-red;
+$brand-success: #00892f;
+$brand-warning: #ffa800;
+$brand-selection: #0045d0;
+$brand-box-shadow: #5e9ed6;
+$brand-heading: #0f2145;
+
+
+/*
+ * Custom Theme
+ */
+
+/*
+ * Sets Bootstrap Variables with site branding
+ */
+
+$blue: $brand-dark-blue;
+$orange: $brand-warning;
+
+$primary: $brand-dark-blue;
+$secondary: $brand-cloud;
+$success: $brand-success;
+$info: $brand-steel;
+$warning: $brand-warning;
+$danger: $brand-alert;
+$light: $brand-cloud;
+$dark: $brand-steel;
+
+$theme-colors: (
+        primary: $primary,
+        secondary: $secondary,
+        success: $success,
+        info: $info,
+        warning: $warning,
+        danger: $danger,
+        light: $brand-cloud,
+        dark: $brand-steel
+);
+
+// Create your own map
+$custom-colors: (
+        "brand-dark-blue": $brand-dark-blue,
+        "brand-navy-blue": $brand-navy-blue,
+        "brand-dark-steel": $brand-dark-steel,
+        "brand-steel-blue": $brand-steel-blue,
+        "brand-light-blue": $brand-light-blue,
+        "brand-pale-blue": $brand-pale-blue,
+        "brand-plum": $brand-plum,
+        "brand-light-plum": $brand-light-plum,
+        "brand-pale-plum": $brand-pale-plum,
+        "brand-pale-gold": $brand-pale-gold,
+        "brand-dark-red": $brand-dark-red,
+        "brand-highlight-red": $brand-highlight-red,
+        "brand-digital-red": $brand-digital-red,
+        "brand-black": $brand-black,
+        "brand-white": $brand-white,
+        "brand-carbon": $brand-carbon,
+        "brand-steel": $brand-steel,
+        "brand-silver": $brand-silver,
+        "brand-veil": $brand-veil,
+        "brand-cloud": $brand-cloud,
+        "brand-fog": $brand-fog
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$layout-max-width: 1280px; // Width of old site: 1080px; New site: 1280px;
+
+// Note: The $font-size-base variable is used to set base font size in theme and HTML element.
+$font-size-base: 1rem; // 1rem = 16px; 0.9375rem = 15px; 0.875rem = 14px
+
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-family-base: $font-family-sans-serif;
+$link-color: $brand-dark-red;
+$link-decoration: underline;
+$link-hover-color: $brand-digital-red;
+$body-color: $brand-steel;

@@ -1,0 +1,221 @@
+.site-header {
+    &__main {
+        @extend .site-layout;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            height: 80px;
+        }
+
+        .profile {
+            padding-right: 1rem;
+
+            .btn {
+                color: $brand-dark-blue;
+                font-weight: 600;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__navbar {
+        border-top: .0625rem solid $brand-steel-blue;
+
+        nav {
+            @extend .site-layout;
+            background-color: $brand-white;
+
+            padding: 0;
+            width: 100%;
+        }
+
+        .navbar-collapse {
+            justify-content: center;
+        }
+
+        .navbar-toggler {
+            border: none;
+            color: transparent;
+            margin-right: 0.625rem;
+            outline: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='#{rgba($brand-white, 1.0)}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .navbar-nav {
+            text-align: center;
+            width: 100%;
+        }
+
+        .nav-item {
+            flex: 1 1 auto;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-link {
+            display: inline-block;
+            font-weight: bold;
+            line-height: 1rem;
+            padding: 0;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                height: 0.0625rem;
+                width: 100%;
+            }
+
+            &:after {
+                content: '';
+                display: inline-block;
+                height: 0.25rem;
+                width: 100%;
+            }
+
+            &.active  {
+                font-weight: 700;
+
+                &:after {
+                    background: $brand-digital-red;
+                    content: '';
+                    display: inline-block;
+                    height: 0.25rem;
+                    width: 100%;
+                }
+            }
+        }
+
+        .nav-link, .nav-link:visited, .nav-link:focus, .nav-link:hover, .nav-link:active {
+            color: $brand-dark-blue;
+            text-decoration: none;
+        }
+
+        a.nav-link {
+            &:hover {
+                color: $brand-digital-red;
+            }
+        }
+    }
+}
+
+
+/*
+ * Mobile styles
+ */
+
+@media (max-width: map-get($grid-breakpoints, "lg")) {
+    .site-header {
+        margin-bottom: 0.625rem;
+
+        &__main {
+            margin-top: 2.1875rem !important;
+
+            img {
+                height: 55px;
+            }
+
+            .profile {
+                display: block;
+                position: absolute;
+                top: 0.3125rem;
+                right: 3.125rem;
+                z-index: 1001;
+
+                .btn {
+                    background-color: inherit;
+                    box-shadow: none;
+                    color: $brand-white;
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                    margin: 0 1.25rem 0 0;
+                    padding: 0;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+
+        &__navbar {
+            nav {
+                background-color: $brand-dark-blue;
+                justify-content: flex-end;
+                padding-left: 0;
+                position: absolute;
+                top: 0;
+                // Prevents issue in BS 3 and 4 where expanded menu appears behind content if a grid is at top of page.
+                z-index: 1;
+            }
+
+            .navbar-nav {
+                background-color: $brand-dark-blue;
+                height: 100vh;
+                margin-bottom: 0.125rem;
+                text-align: left;
+            }
+
+            .nav-item {
+                border-bottom: 1px solid $brand-navy-blue;
+                flex: inherit;
+                font-size: 1rem;
+            }
+
+            .nav-item:first-child {
+                border-top: 1px solid $brand-navy-blue;
+            }
+
+            .nav-link {
+                color: $brand-white;
+                display: block;
+                padding-left: 0.5rem;
+
+                &:after {
+                    height: 0.125rem;
+                }
+
+                &:hover, &.active  {
+                    &:after {
+                        height: 0.125rem;
+                    }
+                }
+            }
+
+            a.nav-link {
+                &:link, &:visited, &:focus, &:hover, &:active  {
+                    color: $brand-white;
+                }
+            }
+        }
+
+        // Used when there is no hamburger menu (no links in navbar) and mobile profile dropdown should be flush right.
+        &--no-navbar-links {
+            // Set min-height so that mobile navbar is visible even when there are no links.
+            nav {
+                min-height: 2.1875rem;
+            }
+
+            .profile {
+                padding-right: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+
+/*
+ * Print styles
+ */
+
+@media print {
+    .site-header {
+        display: none;
+    }
+}

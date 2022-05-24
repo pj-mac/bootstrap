@@ -1,0 +1,25 @@
+.dropdown-menu {
+    background-color: @brand-fog;
+    border: 1px solid @brand-dark-blue;
+
+    li > a {
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            background-color: @brand-light-blue;
+            color: @brand-black;
+            text-decoration: none;
+        }
+
+        &.active,
+        &:active {
+            color: @brand-black;
+        }
+
+        &.disabled,
+        &:disabled {
+            color: @brand-black;
+        }
+    }
+}

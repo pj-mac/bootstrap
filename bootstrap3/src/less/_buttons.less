@@ -1,0 +1,147 @@
+.btn {
+    border-radius: 1.875rem;
+    border-width: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    padding: 0.5rem 1.2rem;
+    text-decoration: none;
+
+    &:focus, &:active {
+        box-shadow: none;
+    }
+
+    &[disabled],
+    &.disabled,
+    &[disabled]:focus,
+    &.disabled:focus,
+    &[disabled]:hover,
+    &.disabled:hover,
+    &[disabled]:active,
+    &.disabled:active {
+        background-color: @brand-steel;
+        border: none;
+        box-shadow: none;
+        color: @brand-white;
+        cursor: not-allowed;
+        pointer-events: all;
+    }
+}
+
+.btn-xs {
+    font-size: 0.6rem;
+    padding: 0.4rem 0.5rem;
+}
+
+.btn-sm {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.7rem;
+}
+
+.btn-lg {
+    font-size: 1rem;
+    padding: 0.6rem 1.3rem;
+}
+
+.btn-primary {
+    background-color: @brand-dark-blue;
+
+    &:hover {
+        background-color: @brand-navy-blue;
+    }
+
+    &:focus, &:active {
+        background-color: @brand-dark-blue;
+        box-shadow: 0 0 0.25rem @brand-box-shadow, 0 0 0.5rem @brand-box-shadow;
+        outline: none;
+    }
+}
+
+.btn-secondary {
+    background-color: @brand-white;
+    box-shadow: inset 0 0 0 0.125rem @brand-dark-blue;
+    color: @brand-dark-blue;
+
+    &:hover {
+        background-color: @brand-light-blue;
+        box-shadow: inset 0 0 0 0.125rem @brand-dark-blue;
+    }
+
+    &:focus, &:active {
+        background-color: @brand-white;
+        box-shadow: 0 0 0.25rem 0.125rem @brand-box-shadow;
+        outline: none;
+    }
+
+    &[disabled],
+    &.disabled,
+    &[disabled]:hover,
+    &.disabled:hover {
+        background-color: @brand-white;
+        border: 1px solid @brand-silver;
+        box-shadow: none;
+        color: @brand-silver;
+    }
+}
+
+.btn-warning {
+    color: @brand-dark-blue;
+
+    &:hover, &:focus {
+        color: @brand-dark-blue;
+        outline: none;
+    }
+}
+
+.btn-success, &.btn-warning, &.btn-danger {
+    &:focus {
+        box-shadow: 0 0 0.25rem 0.125rem @brand-box-shadow;
+        outline: none;
+    }
+}
+
+.btn-danger {
+    background-color: @brand-alert;
+
+    &:hover {
+        background-color: darken(@brand-alert, 10%);
+    }
+}
+
+.btn-link {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+
+    &:focus, &:active {
+        box-shadow: none;
+        outline: none;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &[disabled],
+    &.disabled,
+    &[disabled]:hover,
+    &.disabled:hover {
+        background-color: transparent;
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    &.btn-xs {
+        font-size: 0.8rem;
+    }
+
+    &.btn-sm {
+        font-size: 0.875rem;
+    }
+
+    &.btn-lg {
+        font-size: 1.25rem;
+    }
+}

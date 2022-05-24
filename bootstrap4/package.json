@@ -1,0 +1,43 @@
+{
+  "name": "bootstrap-custom-v4",
+  "description": "Bootstrap 4 Custom Theme",
+  "author": "pj-mac",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server --config webpack.development.js",
+    "build": "NODE_ENV=production webpack --config webpack.production.js && NODE_ENV=production webpack --config webpack.production-unminified.js",
+    "build:all": "npm run build && cd ../ && cd bootstrap5 && npm run build && cd ../ && cd bootstrap3 && npm run build",
+    "clean": "rimraf dist",
+    "lint": "eslint src/js"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.1",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "core-js": "^3.18.0",
+    "css-loader": "^6.3.0",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.3.0",
+    "regenerator-runtime": "^0.13.9",
+    "remove-files-webpack-plugin": "^1.5.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.49.7",
+    "sass-loader": "^12.1.0",
+    "script-loader": "^0.7.2",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  }
+}

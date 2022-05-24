@@ -1,0 +1,32 @@
+.nav-tabs {
+    li {
+        margin-bottom: 0 !important;
+
+        a {
+            border: 0;
+            border-bottom: 0.25rem solid transparent;
+            font-weight: 600;
+            color: @brand-dark-steel;
+            margin-right: 1.875rem;
+            text-decoration: none;
+
+            &.active {
+                border-bottom: 0.25rem solid @brand-digital-red;
+                color: @brand-dark-blue;
+            }
+
+            &.disabled {
+                color: @brand-silver;
+            }
+
+            &:hover, &:focus {
+                background-color: transparent;
+            }
+
+            &.disabled:hover {
+                border-color: transparent;
+                cursor: default;
+            }
+        }
+    }
+}

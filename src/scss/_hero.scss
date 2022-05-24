@@ -1,0 +1,26 @@
+.hero-solid {
+    background-color: $brand-dark-blue;
+    padding: 1rem 0;
+}
+
+.hero-solid__title {
+    color: $brand-white;
+    margin-bottom: 1.5rem;
+}
+
+.hero-solid__subline {
+    color: $brand-white;
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+
+/*
+ * Mobile styles
+ */
+
+@media (max-width: map-get($grid-breakpoints, "lg")) {
+    .hero-solid {
+        margin-top: 2rem;
+    }
+}

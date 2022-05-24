@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 3 Custom Theme</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <%= htmlWebpackPlugin.tags.headTags %>
+</head>
+<body>
+<%= require(`${htmlWebpackPlugin.options.SUB}/_header`).default %>
+
+<div class="hero-solid">
+    <div class="site-layout">
+        <div class="site-main">
+            <h1 class="hero-solid__title">Bootstrap 3 Custom Theme</h1>
+            <p class="hero-solid__subline">View the HTML source of this page to see how it works!</p>
+        </div>
+    </div>
+</div>
+
+<div class="site-layout">
+    <main class="site-main">
+        <p class="text-right">Version <%= htmlWebpackPlugin.options.VERSION %></p>
+        <hr>
+
+        <div class="spacer-sm">
+            <h2>CSS Files</h2>
+
+            <ul>
+                <li><a href="css/bootstrap-custom-base.css">bootstrap-custom-base.css</a></li>
+                <li><a href="css/bootstrap-custom-base.min.css">bootstrap-custom-base.min.css</a></li>
+                <li><a href="css/bootstrap-custom.css">bootstrap-custom.css</a></li>
+                <li><a href="css/bootstrap-custom.min.css">bootstrap-custom.min.css</a></li>
+            </ul>
+        </div>
+
+        <hr>
+        <%= require(`./../../src/html/_typography`).default %>
+        <hr>
+        <%= require(`./../../src/html/_lists`).default %>
+        <hr>
+        <%= require(`${htmlWebpackPlugin.options.SUB}/_accordion`).default %>
+        <hr>
+        <%= require(`./../../src/html/_breadcrumb`).default %>
+        <hr>
+        <%= require(`./../../src/html/_buttons`).default %>
+        <hr>
+        <%= require(`${htmlWebpackPlugin.options.SUB}/_dropdowns`).default %>
+        <hr>
+        <%= require(`${htmlWebpackPlugin.options.SUB}/_card`).default %>
+        <hr>
+        <%= require(`${htmlWebpackPlugin.options.SUB}/_collapse`).default %>
+        <hr>
+        <%= require(`${htmlWebpackPlugin.options.SUB}/_formBasic`).default %>
+        <hr>
+        <%= require(`${htmlWebpackPlugin.options.SUB}/_formHorizontal`).default %>
+        <hr>
+        <%= require(`./../../src/html/_tabs`).default %>
+        <hr>
+        <%= require(`${htmlWebpackPlugin.options.SUB}/_modal`).default %>
+        <hr>
+        <%= require(`./../../src/html/_pagination`).default %>
+        <hr>
+        <%= require(`./../../src/html/_spacing`).default %>
+        <hr>
+        <%= require(`./../../src/html/_grid`).default %>
+        <hr>
+        <%= require(`./../../src/html/_icons`).default %>
+        <hr>
+        <%= require(`${htmlWebpackPlugin.options.SUB}/_mediaQueries`).default %>
+        <hr>
+        <%= require(`./../../src/html/_themeCustomization`).default %>
+        <hr>
+        <%= require(`${htmlWebpackPlugin.options.SUB}/_cssVariables`).default %>
+        <hr>
+        <p><em>Note: The end year in the copyright statement should be dynamic and set to the current year.</em></p>
+        <p class="text-right">Version <%= htmlWebpackPlugin.options.VERSION %></p>
+    </main>
+</div>
+
+<%= require(`${htmlWebpackPlugin.options.SUB}/_footer`).default %>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+        integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha512-oBTprMeNEKCnqfuqKd6sbvFzmFQtlXS3e0C/RGFV0hD6QzhHV+ODfaQbAlmY6/q0ubbwlAM/nCJjkrgA3waLzg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+<% if (htmlWebpackPlugin.options.ENV === "development") { %>
+    <%= htmlWebpackPlugin.tags.bodyTags %>
+<% } %>
+
+</body>
+</html>

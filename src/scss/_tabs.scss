@@ -1,0 +1,22 @@
+.nav-tabs {
+    .nav-item {
+        margin-bottom: 0;
+    }
+
+    .nav-link {
+        border: 0;
+        border-bottom: 0.25rem solid transparent;
+        font-weight: 600;
+        color: $brand-dark-steel;
+        margin-right: 1.875rem;
+
+        &.active {
+            border-bottom: 0.25rem solid $brand-digital-red;
+            color: $brand-dark-blue;
+        }
+
+        &.disabled {
+            color: $brand-silver;
+        }
+    }
+}
