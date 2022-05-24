@@ -1,6 +1,6 @@
 # Bootstrap Custom Theme
 
-<img src="bootstrap-logo.svg" alt="Bootstrap Logo" width="256" height="204" />
+<img src="bootstrap-logo.svg" alt="Bootstrap Logo" width="130" />
 
 ## What is this?
 
